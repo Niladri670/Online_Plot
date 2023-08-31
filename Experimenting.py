@@ -189,7 +189,13 @@ if dropdown=="1 Three Point Problem Solver":
 # Define the points to plot
     points = {'H': (xH, yH), 'M': (xM, yM), 'L': (xL, yL), 'J': (xJ, yJ)}
 
-
+# Create a scatter plot of the points
+    fig,ax = plt.subplots()
+    for name, (x, y) in points.items():
+        ax.scatter(x, y, label=name)
+        ax.plot([xH,xM],[yH,yM],color='black')
+        ax.plot([xH,xL],[yH,yL],color='black')
+        ax.plot([xM,xL],[yM,yL],color='black')
     
 # Add axis labels and legend
     ax.set_xlabel('East(unit)→')
