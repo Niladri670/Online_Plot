@@ -5,7 +5,7 @@ import streamlit as st
 import numpy as np
 import numpy.linalg as LA
 import math as m
-import pandas as pd
+
 
 ######################################################################################################################################
 st.set_page_config(page_title="Niladri's world!",page_icon=":smirk_cat:",layout="wide")
