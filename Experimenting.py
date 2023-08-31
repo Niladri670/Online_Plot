@@ -189,13 +189,7 @@ if dropdown=="1 Three Point Problem Solver":
 # Define the points to plot
     points = {'H': (xH, yH), 'M': (xM, yM), 'L': (xL, yL), 'J': (xJ, yJ)}
 
-# Create a scatter plot of the points
-    fig, ax = plt.subplots()
-    for name, (x, y) in points.items():
-        ax.scatter(x, y, label=name)
-        ax.plot([xH,xM],[yH,yM],color='black')
-        ax.plot([xH,xL],[yH,yL],color='black')
-        ax.plot([xM,xL],[yM,yL],color='black')
+
     
 # Add axis labels and legend
     ax.set_xlabel('East(unit)→')
@@ -491,9 +485,7 @@ elif dropdown=="3 Calculation of separation of Litho-contact due to Faulting":
     m=np.tan(taninv_m)
 
 
-    import streamlit as st
-    import matplotlib.pyplot as plt
-    import numpy as np
+   
 
     def line_equation(m, c, x):
         return m*x + c
